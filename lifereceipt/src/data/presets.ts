@@ -1,0 +1,112 @@
+import { PaperTheme, PresetCategory } from '../types/receipt';
+
+export const PAPER_THEMES: PaperTheme[] = [
+  {
+    id: 'classic',
+    name: 'Classic Thermal',
+    backgroundColor: '#F9F8F3',
+    textColor: '#1A1A1A',
+    accentColor: '#333333',
+    isVip: false,
+    tagline: 'Standard grocery paper',
+  },
+  {
+    id: 'vintage',
+    name: 'Vintage 1800s',
+    backgroundColor: '#EAD7BA',
+    textColor: '#3D2817',
+    accentColor: '#8C5A2B',
+    isVip: true,
+    tagline: 'Aged historical parchment',
+  },
+  {
+    id: 'pink_pos',
+    name: 'Y2K Pink POS',
+    backgroundColor: '#FFE4E6',
+    textColor: '#881337',
+    accentColor: '#BE123C',
+    isVip: true,
+    tagline: 'Aesthetic boutique print',
+  },
+  {
+    id: 'acid_neon',
+    name: 'Acid Cyber',
+    backgroundColor: '#CCFF00',
+    textColor: '#050505',
+    accentColor: '#101010',
+    isVip: true,
+    tagline: 'Rave & techno print',
+  },
+  {
+    id: 'obsidian',
+    name: 'Obsidian Black',
+    backgroundColor: '#171717',
+    textColor: '#E5E5E5',
+    accentColor: '#D4AF37', // Gold accent
+    isVip: true,
+    tagline: 'Black Centurion luxury card',
+  },
+];
+
+export const PRESETS: PresetCategory[] = [
+  {
+    id: 'weekend',
+    icon: '🍸',
+    title: 'The Weekend Wrap',
+    cashier: 'YOUR OVERTHINKING BRAIN',
+    vibe: 'CHAOTIC NEUTRAL',
+    defaultDelusionTax: 35,
+    items: [
+      { name: 'Overthinking 2am text messages', quantity: 3, unitPrice: 33.0 },
+      { name: 'Iced Vanilla Oat Milk Lattes', quantity: 6, unitPrice: 7.5 },
+      { name: 'Impulse Amazon purchases', quantity: 2, unitPrice: 65.0 },
+      { name: 'Unsent Notes App apologies', quantity: 1, unitPrice: 50.0 },
+      { name: 'Hours staring at the ceiling', quantity: 14, unitPrice: 0.0 },
+    ],
+  },
+  {
+    id: 'situationship',
+    icon: '💔',
+    title: 'Situationship Audit',
+    cashier: 'DELUSIONAL DATING COP',
+    vibe: 'EMOTIONALLY COMPLICATED',
+    defaultDelusionTax: 50,
+    items: [
+      { name: 'Mixed signals deciphered', quantity: 9, unitPrice: 20.0 },
+      { name: 'Spotify listening history stalked', quantity: 12, unitPrice: 5.0 },
+      { name: 'Red flags treated as confetti', quantity: 4, unitPrice: 45.0 },
+      { name: 'Screenshots debated with bestie', quantity: 8, unitPrice: 15.0 },
+      { name: 'Thinking "They will change for me"', quantity: 1, unitPrice: 150.0 },
+    ],
+  },
+  {
+    id: 'mental_breakdown',
+    icon: '🧠',
+    title: 'Mental Health & Chill',
+    cashier: 'DOPAMINE ADDICT #404',
+    vibe: 'HANGING BY A THREAD',
+    defaultDelusionTax: 40,
+    items: [
+      { name: 'Doomscrolling Reels until 3 AM', quantity: 4, unitPrice: 25.0 },
+      { name: 'Caffeine overdoses on empty stomach', quantity: 5, unitPrice: 8.0 },
+      { name: 'Plans cancelled 10 min prior', quantity: 2, unitPrice: 60.0 },
+      { name: 'Dissociating in a hot shower', quantity: 3, unitPrice: 15.0 },
+      { name: 'Mental breakdown averted by snacking', quantity: 7, unitPrice: 10.0 },
+    ],
+  },
+  {
+    id: 'vacation',
+    icon: '✈️',
+    title: 'Vacation Mode',
+    cashier: 'AIRPORT TAX INSPECTOR',
+    vibe: 'UNAPOLOGETICALLY BROKE',
+    defaultDelusionTax: 25,
+    items: [
+      { name: 'Overpriced airport iced coffee', quantity: 3, unitPrice: 14.0 },
+      { name: 'Airplane window cloud photos', quantity: 84, unitPrice: 0.5 },
+      { name: 'Outfits packed but never worn', quantity: 6, unitPrice: 30.0 },
+      { name: 'Cocktails consumed before noon', quantity: 4, unitPrice: 18.0 },
+      { name: 'Saying "Vacation calories don\'t count"', quantity: 1, unitPrice: 99.0 },
+    ],
+  },
+];
